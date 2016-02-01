@@ -1,0 +1,95 @@
+body{ 
+     background-image:url("image/Blue-Triangles-l.jpg");
+	 }
+	 
+	 
+     div.one   {font-size:40px;
+          text-align: center;
+	      font-family:Time New Romans;
+		  border:none;
+          background-color:#000419;
+          border-style:None;
+		  padding: 0px 100px 100px 0 px;
+		  color:red;
+		}
+	.button {
+		background-color: #4CAF50;
+		float:right;
+		border: none;
+		color: #fff;
+		padding: 5px 20px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 15px;
+			}
+			.button:hover {background-color: #3e8e41}
+
+			.button:active {
+			background-color: #3e8e41;
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);
+		}
+	 div.two {background-color:#a2a7ad;
+			color:white;
+			text-align:center;
+			border-style:None;
+			padding-top: 50px;
+			padding-right: 100px;
+			padding-bottom: 50px;
+			padding-left: 100px;		  
+			}
+		
+     .star{
+			
+			color:gray;
+	       font-size:14px;
+		   font-family:century;
+	      }		
+     .nav {
+			
+			background-color:#eeeeee;
+			height:50px;
+			width:250px;
+			float:left;
+			margin:20px 0px 0px 70px;
+			padding:0px 10px 50px 10px;	      
+				}
+				
+     .section {
+				background-image:url("image/1638233.jpg");
+				width:900px;
+				height:1000px;
+				float:left;
+				padding:10px;
+				margin:20px 0px 0px 0px;
+				}
+				
+	 .footer {
+				background-color:black;
+				clear:both;
+				text-align:left;
+				padding: 0px 0px 30px 0px
+				}
+	.random{color:white;
+			 font-size:50px;
+			 font-family:Arial;
+			 margin-left:10px; 
+             padding:30px 50px 0px 50px;			 
+			}				
+	 .done{color:white;
+			 font-size:16px;
+			 font-family:Arial;
+			 margin-left:10px; 
+			}			 
+			
+	 .member{
+			 color:white;
+			 font-size:12px;
+			 font-family:Arial;
+			 margin-left:10px; 
+			 }
+	            
