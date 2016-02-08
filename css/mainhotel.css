@@ -67,6 +67,12 @@ body{
 				padding:10px;
 				margin:20px 0px 0px 0px;
 				}
+	div.scroll {
+				background-image:url("image/1638233.jpg");
+				width: 900px;
+				height: 950px;
+				overflow: scroll;
+}
 				
 	 .footer {
 				background-color:black;
@@ -74,11 +80,11 @@ body{
 				text-align:left;
 				padding: 0px 0px 30px 0px
 				}
-	.random{color:white;
+	.tgif      {color:white;
 			 font-size:50px;
 			 font-family:Arial;
 			 margin-left:10px; 
-             padding:30px 50px 0px 50px;			 
+             padding:30px 50px 0px 50px;				 
 			}				
 	 .done{color:white;
 			 font-size:16px;
