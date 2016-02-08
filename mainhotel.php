@@ -15,7 +15,7 @@
 <div class=nav>
 <p class=Star>Forget the hotel name? Choose Star :</p>
 <select>
-  <option value="none"></option>
+  <option value="All"></option>
   <option value="one star">one star</option>
   <option value="two star">two star</option>
   <option value="three star">three star</option>
@@ -24,11 +24,12 @@
 </select>
 </div>
 <div class=section>
-<p>Hotel Pic</p>
+<div class="scroll">Pic hotel 
+</div>
 
 </div>
 <div class=footer>
-<h1 class=random>tgif</h1>    
+<h1 class=tgif>tgif</h1>
 <h2 class=done>Hotel Reservation System done by:</h2>
 <p class=member>Terry Tan Kim Leng</p>
 <p class=member>Melvin Brandon De Cruz</p>
