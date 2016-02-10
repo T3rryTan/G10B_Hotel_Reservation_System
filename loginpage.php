@@ -22,7 +22,7 @@
 <p><b>Username:</b></p>
 <p><input type="text" name="usrname"></p>
 <p><b>Password</b></p>
-<p><input type="text" name="password"></p>
+<p><input type="password" name="password"></p>
 <p><button>Login</button><button type="reset" value="Reset">Reset</button></p>
 </form>
 </div>
