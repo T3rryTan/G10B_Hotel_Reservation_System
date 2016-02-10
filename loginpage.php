@@ -6,13 +6,11 @@
 </head>
 
 <body>
-
-<nav>
 <ul> 
   <li style="float:left; padding-left:1%;"><img src="image/tgif.png" height="40" width="110"></li>
   <li style="font-size:15px";><a href="#about"><b>Sign Up</b></a></li>
 </ul>
-</nav>
+
 
 <center>
 <div class="divlogin">
