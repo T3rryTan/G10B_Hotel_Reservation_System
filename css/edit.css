@@ -1,0 +1,16 @@
+body{
+background-image:url("image/sunset register.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+tr{
+	font-weight: bold;
+	font-size: 140%;
+}
+
+.divedit{
+	border-style:outset;
+	background-color:rgba(192,192,192,0.4);
+}
+
