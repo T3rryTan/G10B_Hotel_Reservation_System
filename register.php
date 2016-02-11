@@ -123,13 +123,14 @@ else{
 
      <form action="register.php" method="post" name="registration_page" onsubmit="return validation()">
         <div class="divregister">
-            <p><span style="font-size: 30px; font-weight: bold;">Create a New Account</span>
             
-          
-		   <table>
-				<tr>
-   <td style="height:20px"><font color="red">*</font>Name:</td>
-   <td style="text-align:left"><input class="signupform_text" name="fullname" type="text" id="fullname" style="width:150px;height:18px;"><span id="username_status"></td>
+            
+<center>          
+<table>
+<p><span style="font-size: 30px; font-weight: bold;">Create a New Account</span></p>
+<tr>
+<td style="height:20px"><font color="red">*</font>Name:</td>
+<td style="text-align:left"><input class="signupform_text" name="fullname" type="text" id="fullname" style="width:150px;height:18px;"><span id="username_status"></td>
 </tr>
 <tr>
    <td style="height:20px"><font color="red">*</font>User Name:</td>
@@ -169,7 +170,7 @@ else{
 </tr>
 <tr>
                 	<td colspan="3" align="left">
-                  		<font style="font-size:100%;"><font color="red">*</font>Security Question and Answer are required for reseting Password and username</font>
+                  		<font style="font-size:100%;"><font color="red">*</font><font color="pink">Security Question and Answer are required for resetting account</font></font>
                    		<table border="0" cellpadding="0" cellspacing="0">
                             <tr height="5"><td></td></tr>
                             <tr>
@@ -198,6 +199,7 @@ else{
                               	</td>
                          	</tr>
 							</table>
+							</center>
             </div>
             <br><div class="submit">
              <input type="hidden" name="submit" value="TRUE" />
