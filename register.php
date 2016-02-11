@@ -122,7 +122,7 @@ else{
     ?>
 
      <form action="register.php" method="post" name="registration_page" onsubmit="return validation()">
-        <div>
+        <div class="divregister">
             <p><span style="font-size: 30px; font-weight: bold;">Create a New Account</span>
             
           
