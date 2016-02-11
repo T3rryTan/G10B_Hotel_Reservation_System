@@ -9,7 +9,6 @@ if(isset($_POST['login']))
     {
         $error[] = 'Please Enter Your Password';
     }
-
     if (empty($_POST['id']))
     {
         $error[] = 'Please Enter Your Name';
@@ -18,7 +17,6 @@ if(isset($_POST['login']))
     {
         $error[] = 'Your user name is invalid';
     }
-
 	$userName = $_POST['id'];
 	$password = $_POST['password'];
 	
@@ -38,7 +36,6 @@ if(isset($_POST['login']))
             $_SESSION['flash_msg'] = "User ID / Password wrong";
 		}
 }
-
 if(isset($_POST['getDetail']))
 {
 	$userName = $_POST['userName'];	
@@ -53,7 +50,7 @@ if(isset($_POST['getDetail']))
 
 <html>
 <head>
-    <link href="css.css" rel="stylesheet" type="text/css"/>
+    <link href="adminlogin.css" rel="stylesheet" type="text/css"/>
     <style type="text/css">
         .login
         {
@@ -66,13 +63,11 @@ if(isset($_POST['getDetail']))
     {
       var id = document.forms["admin_login_page"]["id"].value;
       var password = document.forms["admin_login_page"]["password"].value;
-
       if(id == "" || !isNaN(id))
       {
         alert("Please enter the correct name");
         return false;
       }
-
       if(password == "" || password.length <6 || password.length >15)
       {
         alert("Password must be between 6 and 15 characters");
@@ -80,11 +75,15 @@ if(isset($_POST['getDetail']))
       }
     }
     </script>
+
 </head>
+
 <body>
 
 
-    <form action="admin_login.php" method="post" name="admin_login_page" onsubmit="return validation()">
+<div class=one><img src="image/tgif-950x950.png" alt="tgif" style="width:180px;height:150px;"  >
+</div>  
+  <form action="admin_login.php" method="post" name="admin_login_page" onsubmit="return validation()">
         <fieldset class="login data-container">
 
             <?php
