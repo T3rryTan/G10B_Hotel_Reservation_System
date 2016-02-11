@@ -40,7 +40,7 @@ else{
 
 <html>
 <head>
-   <link rel="stylesheet" type="text/css" href="style.css"/>
+   <link rel="register css.css" type="text/css" href="style.css"/>
     <script>
 	
     function validation()
@@ -122,10 +122,10 @@ else{
     ?>
 
      <form action="register.php" method="post" name="registration_page" onsubmit="return validation()">
-        <fieldset class="elements data-container">
+        <div>
             <p><span style="font-size: 30px; font-weight: bold;">Create a New Account</span>
             
-           <div>
+          
 		   <table>
 				<tr>
    <td style="height:20px"><font color="red">*</font>Name:</td>
