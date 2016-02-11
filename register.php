@@ -202,6 +202,7 @@ else{
             <br><div class="submit">
              <input type="hidden" name="submit" value="TRUE" />
              <input type="submit" name="register"  class="custom-button" value="Register"/>
+             <input type="reset" name="reset" class="custom-button" value="reset"/>
             </div></br>
         </fieldset>
     </form>
