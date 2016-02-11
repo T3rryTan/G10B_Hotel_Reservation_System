@@ -8,10 +8,22 @@ body{
 {
 	background-color: grey;
 	height: auto;
-    width: auto;
+        width: auto;
 	border-style:outset;
 	background-color:rgba(192,192,192,0.4);
 	
+}
+
+p
+{
+	font-style: oblique;
+}
+
+tr
+{
+	font-weight: bold;
+	font-size: 140%;
+	font-style: italic;
 }
 
 
