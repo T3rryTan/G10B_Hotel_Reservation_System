@@ -1,5 +1,7 @@
 body{ 
-     background-image:url("image/Blue-Triangles-l.jpg");
+     background-image:url("image/blue-neon-cityscape-blue-34674370-1920-1200.jpg");
+	 background-repeat: no-repeat;
+	 background-size: 2000px 2000px;
 	 }
 	 
 	 
@@ -7,7 +9,7 @@ body{
           text-align: center;
 	      font-family:Time New Romans;
 		  border:none;
-          background-color:#000419;
+          background-color:black;
           border-style:None;
 		  padding: 0px 100px 100px 0 px;
 		  color:red;
@@ -33,49 +35,58 @@ body{
 			box-shadow: 0 5px #666;
 			transform: translateY(4px);
 		}
-	 div.two {background-color:#a2a7ad;
-			color:white;
-			text-align:center;
-			border-style:None;
-			padding-top: 50px;
-			padding-right: 100px;
-			padding-bottom: 50px;
-			padding-left: 100px;		  
-			}
-		
-     .star{
-			
-			color:gray;
-	       font-size:14px;
-		   font-family:century;
-	      }		
-     .nav {
-			
-			background-color:#eeeeee;
-			height:50px;
-			width:250px;
-			float:left;
-			margin:20px 0px 0px 70px;
-			padding:0px 10px 50px 10px;	      
-				}
-				
-     .section {
-				background-image:url("image/1638233.jpg");
-				width:900px;
-				height:1000px;
-				float:left;
-				padding:10px;
-				margin:20px 0px 0px 0px;
-				}
-	div.scroll {
-				background-image:url("image/1638233.jpg");
-				width: 900px;
-				height: 950px;
-				overflow: scroll;
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 				
+     .section {
+				background-image:url("image/13265401-Brick-wall-Vintage-texture-in-yellow-brown-tones--Stock-Photo.jpg");
+				width:auto;
+				height:auto;
+				
+				padding:10px;
+				margin:50px 100px 0px 50px;
+				}
+	
+				
 	 .footer {
-				background-color:black;
+				background-color:#000419;
 				clear:both;
 				text-align:left;
 				padding: 0px 0px 30px 0px
