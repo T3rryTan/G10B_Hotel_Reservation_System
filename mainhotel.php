@@ -19,12 +19,13 @@ include("menu.php");
 <div class=footer>
 <h1 class=tgif>tgif</h1>
 <h2 class=done>Hotel Reservation System done by:</h2>
-<p class=member>Terry Tan Kim Leng</p>
-<p class=member>Melvin Brandon De Cruz</p>
-<p class=member>Samuel Leong Wei Jian</p>
-<p class=member>Tian Kee</p>
+<p class=member>Terry Tan Kim Leng 1132702508</p>
+<p class=member>Melvin Brandon De Cruz 1132702554</p>
+<p class=member>Samuel Leong Wei Jian 1132702530</p>
+<p class=member>Kee Chen Thiam 1121116435</p>
 
 </div>
 
 </body>
 </html>
+
