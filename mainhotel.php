@@ -7,6 +7,20 @@
 <?php
 include("menu.php");
 ?>
+<?php
+        if(!isset($_SESSION["login"]) || $_SESSION["login"] == false)
+		{
+    ?>
+	<div>
+		<p><span style="margin-left:20px; font-size: 20px;">Welcome To Our Hotel Reservation ! </span>
+	</div>
+	<?php
+	} else {
+	?>
+		<p><span style="margin-left:20px; font-size: 20px;">Welcome, <?php echo $_SESSION["username"] ?></span></p>
+	<?php
+	}
+	?>
 <div class=section>
 <div>
 		<form>
@@ -28,4 +42,3 @@ include("menu.php");
 
 </body>
 </html>
-
