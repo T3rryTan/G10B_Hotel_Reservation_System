@@ -20,7 +20,7 @@ if(isset($_POST['login']))
     }
 
 	$username = $_POST['username'];
-	$password = $_POST['password'];
+	$password = md5($_POST['password']);
 	
 		$query = mysql_query("SELECT * FROM user where username = '$username' and password = '$password'") or die(mysql_error());
 	
