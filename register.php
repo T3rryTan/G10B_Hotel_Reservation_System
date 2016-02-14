@@ -1,3 +1,4 @@
+<html>
 <?php
 /* ----------- REGISTER PAGE ----------------*/
 include("dataconn.php");
@@ -13,7 +14,7 @@ $email = mysql_real_escape_string($_POST['email']);
 $gender = mysql_real_escape_string(@$_POST['gender']);
 $birthday = mysql_real_escape_string($_POST['birthday']);
 $address = mysql_real_escape_string($_POST['address']);
-$encpassword = md5($password);
+$password = md5($password);
 $s_answer= mysql_real_escape_string($_POST['s_answer']);
 $s_question= mysql_real_escape_string($_POST['s_question']);
 
@@ -32,7 +33,7 @@ else{
 	if($regcommand)
 	{
     $_SESSION['flash_msg'] = "You have been successfully registered";
-		header("Location:login.php");
+		header("Location:Login Page.php");
 	}
 	}
 }
@@ -40,7 +41,7 @@ else{
 
 <html>
 <head>
-   <link rel="register css.css" type="text/css" href="style.css"/>
+    <link href="register css.css" rel="stylesheet" type="text/css"/>
     <script>
 	
     function validation()
@@ -117,20 +118,16 @@ else{
 </head>
 <body>
 
-    <?php
-      include("menu2.php");
-    ?>
-
      <form action="register.php" method="post" name="registration_page" onsubmit="return validation()">
-        <div class="divregister">
+       <div class="divregister">
             
             
-<center>          
-<table>
-<p><span style="font-size: 30px; font-weight: bold;">Create a New Account</span></p>
-<tr>
-<td style="height:20px"><font color="red">*</font>Name:</td>
-<td style="text-align:left"><input class="signupform_text" name="fullname" type="text" id="fullname" style="width:150px;height:18px;"><span id="username_status"></td>
+          <center>
+		   <table>
+		   <p><span style="font-size: 30px; font-weight: bold;">Create a New Account</span>
+				<tr>
+   <td style="height:20px"><font color="red">*</font>Name:</td>
+   <td style="text-align:left"><input class="signupform_text" name="fullname" type="text" id="fullname" style="width:150px;height:18px;"><span id="username_status"></td>
 </tr>
 <tr>
    <td style="height:20px"><font color="red">*</font>User Name:</td>
@@ -141,7 +138,7 @@ else{
    <td style="text-align:left"><input class="signupform_text" name="password" type="password" id="password" onkeyup="chkCase(this)" style="width:150px;height:18px;"><span id="password_status"></td>
 </tr>
 <tr>
-   <td style="height:20px;"><font color="red">*</font>Repeatpassword:</td>
+   <td style="height:20px;"><font color="red">*</font>Confirm Password:</td>
    <td style="text-align:left"><input class="signupform_text" name="repeatpassword" type="password" id="repeatpassword" onkeyup="chkCase(this)" style="width:150px;height:18px;"><span id="verifynote" class="warn hidden"></span></td>
 </tr>
 <tr>
@@ -158,11 +155,11 @@ else{
 			<input type="radio" name="gender" value="Female" /> Female</td>
 </tr>
 <tr>
-   <td style="height:20px">Birthday:</td>
+   <td style="height:20px"><font color="red">*</font>Birthday:</td>
    <td style="text-align:left"><input class="signupform_text" name="birthday" type="date" id="Birthday" style="width:150px;height:18px;"></td>
 </tr>
 <tr>
-   <td style="height:20px">Address:</td>
+   <td style="height:20px"><font color="red">*</font>Address:</td>
    <td style="text-align:left"><input class="signupform_text" name="address" type="text" id="Address" size="70" maxlength="60"></td>
 </tr>
 <tr>
@@ -170,7 +167,7 @@ else{
 </tr>
 <tr>
                 	<td colspan="3" align="left">
-                  		<font style="font-size:100%;"><font color="red">*</font><font color="pink">Security Question and Answer are required for resetting account</font></font>
+                  		<font style="font-size:100%;"><font color="red">*</font><font color="pink">Security Question and Answer are required for reseting your account</font></font>
                    		<table border="0" cellpadding="0" cellspacing="0">
                             <tr height="5"><td></td></tr>
                             <tr>
@@ -201,12 +198,15 @@ else{
 							</table>
 							</center>
             </div>
+			
             <br><div class="submit">
              <input type="hidden" name="submit" value="TRUE" />
              <input type="submit" name="register"  class="custom-button" value="Register"/>
-             <input type="reset" name="reset" class="custom-button" value="reset"/>
+			 <input type="reset" name="reset" class="custom-button" value="Reset"/>
             </div></br>
+			
         </fieldset>
     </form>
+
     </body>
 </html>
