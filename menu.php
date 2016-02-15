@@ -6,7 +6,9 @@ $categoryTypeQuery = "SELECT * FROM hotel_type";
 $categoryResult = mysql_query($categoryTypeQuery) or die(mysql_error());
 
 ?>
-<div class=one><img src="image/tgif-950x950.jpg" alt="tgif" style="width:180px;height:150px;"></div>
+<div class=one><img src="image/tgif-950x950.jpg" alt="tgif" style="width:180px;height:150px;">
+
+</div>
 <div id='cssmenu'>
   <ul>
         <li><a <?php echo ($current_path == 'mainhotel.php' ? 'class="active"' : '') ?> href='mainhotel.php'><span>HOME</span></a></li>
@@ -16,11 +18,12 @@ $categoryResult = mysql_query($categoryTypeQuery) or die(mysql_error());
         ?>
             <li><a <?php echo ($current_path == 'login page.php' ? 'class="active"' : '') ?> href='login page.php'><span>LOGIN</span></a></li>
             <li><a <?php echo ($current_path == 'register.php' ? 'class="active"' : '') ?> href='register.php'><span>REGISTER</span></a></li>
+			
         <?php
         }
         ?>
 		<li><a <?php echo ($current_path == 'hotel.php' ? 'class="active"' : '') ?> href='hotel.php'><span>HOTEL</span></a></li>
-        <li <?php echo ($current_path == 'room' ? 'class="active"' : '') ?> class='has-sub'><a href='#'><span>ROOM</span></a>
+		<li <?php echo ($current_path == 'room' ? 'class="active"' : '') ?> class='has-sub'><a href='#'><span>ROOM</span></a>
             <ul>
                 <?php
                 while($row = mysql_fetch_assoc($categoryResult))
@@ -32,7 +35,6 @@ $categoryResult = mysql_query($categoryTypeQuery) or die(mysql_error());
 				
             </ul>
         </li>
-
         <?php
         if(isset($_SESSION["login"]) && $_SESSION["login"]){
         ?>
