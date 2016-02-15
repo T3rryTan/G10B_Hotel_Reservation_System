@@ -1,10 +1,9 @@
 # G10B_Hotel_Reservation_System
 
 ##Introducion
-In this project, I would to thank to all my team member able to contribute to the system,
-besidse that, we would to thank you Mr. Nima Saed to solve problem, so that, our project 
-can done smoothly.This Hotel Reservation System on focus how user interaction with the system and
-how admin able to add,edit and delete.
+In this project, I would to thank to all my team member for contributing to the system.
+Besides that, We would like to thank you Mr. Nima Saed for assisting us to solve our problem faced during system development.So that, our project can done smoothly.This Hotel Reservation System focus on how user interact with the system and
+how admin able to add,edit and delete in the system.
 
 ##Objection 
 We focus on user and admin:
