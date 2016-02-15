@@ -62,6 +62,12 @@ function productExists($product_id)
 <head>
     <link href="css.css" rel="stylesheet" type="text/css"/>
 	<link rel="stylesheet" type="text/css" href="mainhotel.css">
+	<style type="text/css">
+	h3{
+    text-align:left;
+	padding-left:10px;
+	}
+	</style>
 
 </head>
 <body>
@@ -84,10 +90,17 @@ function productExists($product_id)
 	<tr>
 	<th width="300px">ROOM IMAGE</th>
 	<th width="250px">ROOM</th>
+	 <?php
+        if(isset($_SESSION["login"]) && $_SESSION["login"]){
+        ?>
 	<th width="100px">QUANTITY</th>
 	<th width="250px">CHECKIN Date</th>
 	<th width="50px">Days</th>
 	<th></th>
+	
+	        <?php
+        }
+        ?>
 	</tr>
 	    <?php
         	while($row = mysql_fetch_assoc($roomResult))
@@ -95,7 +108,11 @@ function productExists($product_id)
         		echo '<form name="category" action="" method="post"/>';
         		echo '<tr>';
 				echo '<td><img src="image/'.$row["roomImage"].'" alt="'.$row["roomName"].'" width="300" height="200"/></td>';
-        		echo '<td><h3>NAME:  '.$row["roomName"].'<br><br>PRICE:  RM  '.$row["roomPrice"].'<br><br>Detail:  '.$row["roomDetail"].'</h3></td>';
+        		echo '<td><h3>NAME:  '.$row["roomName"].'<br><br>PRICE:  RM  '.$row["roomPrice"].'<br><br>Details:  '.$row["roomDetail"].'</h3></td>';
+				
+
+        if(isset($_SESSION["login"]) && $_SESSION["login"]){
+    
         									
 				echo '<td align="center"><input name="quantity" type="number"  min="1" max="10" value="1" size="2"></td>';		
 				
@@ -106,6 +123,9 @@ function productExists($product_id)
         		echo '<input type="hidden" name="pid" value="'.$row["roomID"].'"/>';
 				
         		echo '<input type="hidden" name="action" value="add"/>';
+				
+		}
+   
         		echo '</form>';
         	}
         ?>
