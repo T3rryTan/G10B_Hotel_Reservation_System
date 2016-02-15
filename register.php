@@ -1,4 +1,4 @@
-<html>
+
 <?php
 /* ----------- REGISTER PAGE ----------------*/
 include("dataconn.php");
@@ -41,7 +41,8 @@ else{
 
 <html>
 <head>
-    <link href="register css.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="mainhotel.css">
+	<link href="register css.css" rel="stylesheet" type="text/css"/>
     <script>
 	
     function validation()
@@ -49,13 +50,13 @@ else{
       var fullname = document.forms["registration_page"]["fullname"].value;
       var username = document.forms["registration_page"]["username"].value;
       var password = document.forms["registration_page"]["password"].value;
-      var repeatpassword = document.forms["registration_page"]["repeatpassword"].value;
+	  var repeatpassword = document.forms["registration_page"]["repeatpassword"].value;
       var phone = document.forms["registration_page"]["phone"].value;
-      var email = document.forms["registration_page"]["email"].value;
+	  var email = document.forms["registration_page"]["email"].value;
       var gender = document.forms["registration_page"]["gender"].value;
       var birthday = document.forms["registration_page"]["birthday"].value;
       var address = document.forms["registration_page"]["address"].value;
-      var s_answer = document.forms["registration_page"]["s_answer"].value;
+	  var s_answer = document.forms["registration_page"]["s_answer"].value;
       var s_question = document.forms["registration_page"]["s_question"].value;
 	  
 
@@ -117,7 +118,9 @@ else{
 
 </head>
 <body>
-
+<?php
+include("menu0.php");
+?>
      <form action="register.php" method="post" name="registration_page" onsubmit="return validation()">
        <div class="divregister">
             
@@ -155,11 +158,11 @@ else{
 			<input type="radio" name="gender" value="Female" /> Female</td>
 </tr>
 <tr>
-   <td style="height:20px"><font color="red">*</font>Birthday:</td>
+   <td style="height:20px">Birthday:</td>
    <td style="text-align:left"><input class="signupform_text" name="birthday" type="date" id="Birthday" style="width:150px;height:18px;"></td>
 </tr>
 <tr>
-   <td style="height:20px"><font color="red">*</font>Address:</td>
+   <td style="height:20px">Address:</td>
    <td style="text-align:left"><input class="signupform_text" name="address" type="text" id="Address" size="70" maxlength="60"></td>
 </tr>
 <tr>
@@ -169,7 +172,7 @@ else{
                 	<td colspan="3" align="left">
                   		<font style="font-size:100%;"><font color="red">*</font><font color="pink">Security Question and Answer are required for reseting your account</font></font>
                    		<table border="0" cellpadding="0" cellspacing="0">
-                            <tr height="5"><td></td></tr>
+                            <tr height="5"></tr>
                             <tr>
                               	<td><font color="red">*</font>Security Question</font></td><td width="7">:</td>
                              	<td>
@@ -188,7 +191,8 @@ else{
                          		<td><font color="red">*</font>Security Answer</font></td><td>:</td>
                                	<td><input type="text" name="s_answer" style="width:220px;" maxlength="30" /></td>
                           	</tr>
-                        	<tr height="5"><td></td></tr>
+                        	<tr height="5"></tr>
+                           	
 							</table>
 							</center>
             </div>
