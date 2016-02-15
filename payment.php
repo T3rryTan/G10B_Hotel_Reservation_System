@@ -5,12 +5,17 @@ include("dataconn.php");
 
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="mainhotel.css">
     <link href="css.css" rel="stylesheet" type="text/css"/>
+
 	<style type="text/css">
 	th {
     height: 50px;
 	background-color: black;
 	color:white;
+	}
+	
+	p{align:right;}
 	</style>
 	<script>
 		function validation()
@@ -29,6 +34,7 @@ include("dataconn.php");
 	<?php
     include("menu.php");
     ?>
+	<div>
 
 <?php 
 
@@ -96,15 +102,15 @@ if(isset($_POST['submit']) && $_POST['submit'] == "Pay Bill" && isset($_SESSION[
 	
 }
 //------- /for checkout ---------
-
 if(isset($_SESSION['cart']) && $_SESSION['cart']) { //if the cart isn't empty show the cart
 
 	$total = 0;
 	
     echo "<table border=\"1\" padding=\"3\" width=\"100%\" class=\"data-container\">"; //format the cart using a HTML table
 	//show the empty cart link - which links to this page, but with an action of empty. A simple bit of javascript in the onlick event of the link asks the user for confirmation
-	 echo "<td colspan=\"6\" align=\"right\"><a href=\"$_SERVER[PHP_SELF]?action=empty\" onclick=\"return confirm('Are you sure?');\"><img src=\"image/delete.png\"/></a></td>";
-	?>
+
+	 echo "<td colspan=\"6\"align=\"right\"><a href=\"$_SERVER[PHP_SELF]?action=empty\" onclick=\"return confirm('Are you sure?');\"><img src=\"image/delete.png\"/></a></td>";
+	 ?>
 <tr>
 <th></th>
 <th>ROOM NAME</th>
@@ -157,6 +163,7 @@ if(isset($_SESSION['cart']) && $_SESSION['cart']) { //if the cart isn't empty sh
     echo "</tr>";
     echo "</table>";
 	?>
+	<div style='background: #f2f2f2;'>
 	<br>
 	<div>
 	<span style="margin-left: 88%"><a href="hotel.php"><input type="submit" name="shopping_more"  class="custom-button" value="Back To Shopping"/></a></span>
@@ -170,7 +177,7 @@ if(isset($_SESSION['cart']) && $_SESSION['cart']) { //if the cart isn't empty sh
 	}
 	</script>
 	
-	<div>
+
     <form name="payment" action="" method="post" onsubmit="return validation()">
 		<?php
         if(!isset($_SESSION["login"]) || $_SESSION["login"] == false)
@@ -283,8 +290,8 @@ if(isset($_SESSION['cart']) && $_SESSION['cart']) { //if the cart isn't empty sh
 		
 		echo '<h3>Total Price :';
 		echo '<input = "text" width="20" value="RM '.$total.'" readonly></h3>'; // make a text field non editable or readonly
-		echo '<p span style="margin-left: 5%"/><input type="submit" name="submit" class="custom-button" value="Pay Bill" ></p>';				
-		}			
+		echo '<p span style="margin-left: 5%"/><input type="submit" name="submit" class="custom-button" value="Pay Bill" ></p>';
+}		
 		?>   
 			
 		<?php
@@ -297,4 +304,6 @@ if(isset($_SESSION['cart']) && $_SESSION['cart']) { //if the cart isn't empty sh
 		?>
 	</form>
 	</div>
+	</div>
+	</body>
 </html>
