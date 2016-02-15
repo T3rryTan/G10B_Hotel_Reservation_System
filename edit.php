@@ -176,14 +176,12 @@ if(isset($_SESSION["id"]) && $_SESSION["id"] != null){
    <td style="height:20px">Address:</td>
    <td style="text-align:left"><input class="signupform_text" name="address" type="text" id="Address" value="<?php echo $userInfo["address"]?>" size="70" maxlength="60"></td>
 </tr>
-<tr>
-   <td colspan="2"></td>
-</tr>
+
 <tr>
                 	<td colspan="3" align="left">
                   		<font style="font-size:100%;"><font color="red">*</font>Security Question and Answer are required for reseting Password and username</font>
                    		<table border="0" cellpadding="0" cellspacing="0">
-                            <tr height="5"><td></td></tr>
+                            <tr height="5"></tr>
                             <tr>
                               	<td><font color="red">*</font>Security Question</font></td><td width="7">:</td>
                              	<td>
@@ -203,13 +201,8 @@ if(isset($_SESSION["id"]) && $_SESSION["id"] != null){
                          		<td><font color="red">*</font>Security Answer</font></td><td>:</td>
                                	<td><input type="text" name="s_answer" style="width:220px;" value="<?php echo $userInfo["s_answer"]?>" maxlength="30" /></td>
                           	</tr>
-                        	<tr height="5"><td></td></tr>
-                           	<tr>
-                            	<td colspan="3">
-                            		<!--font size="2"><input type="checkbox" name="chkReceiveNewsAndPromo" value="Y">Receive e-mail about News and Promotion.
-                            		<br/><input type="checkbox" name="chkReceiveNew" value="Y">Receive e-mail about New Product.</font-->
-                              	</td>
-                         	</tr>
+                        	<tr height="5"></tr>
+                           	
 							</table>
             </div>
 		
@@ -218,3 +211,4 @@ if(isset($_SESSION["id"]) && $_SESSION["id"] != null){
 	    </div></br>
 	</fieldset>
 </form>
+</body>
