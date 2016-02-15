@@ -189,12 +189,6 @@ else{
                                	<td><input type="text" name="s_answer" style="width:220px;" maxlength="30" /></td>
                           	</tr>
                         	<tr height="5"><td></td></tr>
-                           	<tr>
-                            	<td colspan="3">
-                            		<!--font size="2"><input type="checkbox" name="chkReceiveNewsAndPromo" value="Y">Receive e-mail about News and Promotion.
-                            		<br/><input type="checkbox" name="chkReceiveNew" value="Y">Receive e-mail about New Product.</font-->
-                              	</td>
-                         	</tr>
 							</table>
 							</center>
             </div>
