@@ -53,28 +53,64 @@ if(isset($_POST['getDetail']))
 ?>
 <html>
 <head>
- <form action="Login Page.php" method="post" name="login_page" onsubmit="return validation()">
-<link rel="stylesheet" type="text/css" href="admin.css">
+	<link rel="stylesheet" type="text/css" href="mainhotel.css">
+    <link href="admin.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        .login
+        {
+            text-align: center;
+            font-size: 15px;
+        }
+    </style>
+    <script>
+    function validation()
+    {
+      var username = document.forms["login_page"]["username"].value;
+      var password = document.forms["login_page"]["password"].value;
 
+      if(username == "" || !isNaN(username))
+      {
+        alert("Please enter the correct name");
+        return false;
+      }
+
+      if(password == "" || password.length <6 || password.length >15)
+      {
+        alert("Password must be between 6 and 15 characters");
+        return false;
+      }
+    }
+    </script>
 </head>
 
 <body>
+<?php
+include("menu0.php");
+?>
+    <form action="Login Page.php" method="post" name="login_page" onsubmit="return validation()">
+        <box class="boxlogin">
+	
 
+            <?php
+            if (isset($_SESSION['flash_msg']) && $_SESSION['flash_msg'] != NULL) 
+			{
+                echo '<div class="alert">
+                    '.$_SESSION['flash_msg'].'
+                  </div>';
+                $_SESSION['flash_msg'] = NULL;
+            }
+            ?>
+</box>
 
-<ul> 
-  <li style="float:left; padding-left:1%;"><img src="image/tgif.png" height="40" width="110"></li>
-  <li style="font-size:15px";><a href="register.php"><b>Sign Up</b></a></li>
-</ul>
 
 
 <center>
 <div class="divlogin">
-<form action="demo_form.asp" method="get">
 <h1><b>Welcome to Tgif Hotel Reservation System</b></h1>
 <p><b>Username:</b></p>
-<p><input type="text" name="username"></p>
+<p><input name="username" type="text" id="username"></p>
 <p><b>Password:</b></p>
-<p><input type="password" name="password"></p>
+<p><input name="password" type="password" id="password"></p>
 <p><input type="submit" name="login" class="custom-button" value="Login" /><button type="reset" value="Reset">Reset</button></p>
 </form>
 </div>
