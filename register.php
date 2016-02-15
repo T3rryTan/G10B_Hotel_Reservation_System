@@ -49,13 +49,13 @@ else{
       var fullname = document.forms["registration_page"]["fullname"].value;
       var username = document.forms["registration_page"]["username"].value;
       var password = document.forms["registration_page"]["password"].value;
-	  var repeatpassword = document.forms["registration_page"]["repeatpassword"].value;
+      var repeatpassword = document.forms["registration_page"]["repeatpassword"].value;
       var phone = document.forms["registration_page"]["phone"].value;
-	  var email = document.forms["registration_page"]["email"].value;
+      var email = document.forms["registration_page"]["email"].value;
       var gender = document.forms["registration_page"]["gender"].value;
       var birthday = document.forms["registration_page"]["birthday"].value;
       var address = document.forms["registration_page"]["address"].value;
-	  var s_answer = document.forms["registration_page"]["s_answer"].value;
+      var s_answer = document.forms["registration_page"]["s_answer"].value;
       var s_question = document.forms["registration_page"]["s_question"].value;
 	  
 
