@@ -1,33 +1,31 @@
 # G10B_Hotel_Reservation_System
 
-##Introducion
-In this project, I would to thank to all my team member for contributing to the system.
-Besides that, We would like to thank you Mr. Nima Saed for assisting us to solve our problem faced during system development.So that, our project can done smoothly.This Hotel Reservation System focus on how user interact with the system and
+##Introduction
+In this project, We would like to thanks our team member for contributing in the project development process, which title is Hotel Reservation System.
+Besides that, We would like to thank you Mr. Nima Saed for guiding us throughout our project development in order for our project to be completed succesfully.This Hotel Reservation System focus on how user able to interact with the system and
 how admin able to add,edit and delete in the system.
 
-##Objection 
-We focus on user and admin:
+#Objective 
+Creating a user/admin friendly webpage system which enable user/admin to get the essential need of a hotel reservation system
 
 1.User
-
- - user able register and login to the system 
- - user able to edit profile after login
- - user able to select hotel and booking the hotel room
- - user able to use e-payment and print for that room
- - user able to view the history 
+- user able register and login into the system 
+- user able to edit profile after login
+- user able to select hotel and book hotel room
+- user able to use e-payment and print for the selected room
+- user able to view the transaction history 
  
 2.Admin 
  
  - admin able to login to the admin system.
- - admin able to add,edit and delete hotel and room in admin system.
+ - admin able to perform privileged function such as add and deleting hotel,hotel room.
  
- ##Scope of the Project
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column 
+#Scope of the Project
+-allow student to apply their knowledge/skills such html,php,etc on their project.
+-allow student to identify their weaknesses throughout the project the development
+-allow student to improve communicating/cooperating skills within their team member
 
-##Contribution of the project
+#Contribution of the project
 
 1.Terry Tan Kim Leng
  - Interface Designer
@@ -48,7 +46,8 @@ Content in the first column | Content in the second column
  - Interface Designer
  - Coding : PHP, HTML5, and CSS
  - Tester 
-##Conclusion
-In conclusion,  
 
-## How the System Run
+#Conclusion
+In conclusion, this project have concluded that with the knowledge of the programming language such as html,php,javascript, etc, a system that able to make/perform a task easily could be development. In addition, the importance of having security in a webpage and database are essential in order to preserve the confidentiality,integrity and availability of data within a database and webpage. 
+
+# How the System Run
