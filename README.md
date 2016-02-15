@@ -61,34 +61,44 @@ Step 1(Installation)
 Step 2(Access)
 - Once every file has trasfer, then open web broswer and type :localhost/hotel-WEB/mainhotel.php
 - this access the user main page
-- pic
+![enter image description here](https://lh3.googleusercontent.com/vBHuKhxqnyxHtVlQDGj8X7AKYJWjxWzTgOSO66yqmgUxYMYMzyZEiGkuA7fvVljEoQ=s0 "homepage.png")
 
 - To book the hotel,User need to register 
-- pic
+![enter image description here](https://lh3.googleusercontent.com/gYsXm9qMWPgTmTIBFtBDX9BF2XUx86S2ymFUY3QqXarfXpvTF4YONTHqar7qEp8saQ=s0 "registerpage.png")
+
 - after successfully register user able to access on system
-- pic
+![enter image description here](https://lh3.googleusercontent.com/boNiclqXIOz3EcDE1l3OuION5djS58J7L2UOCkpEk9R83aRItXV3kSxLhjcr3rsuLg=s0 "LoginPage.png")
+
+-after success to the user profile
+![enter image description here](https://lh3.googleusercontent.com/FFb3bq5xnM5wEOCKp0euTo5148vAB5MqPH0BtuCCo63SLMgQlX5GVAi02kmPbP3xwA=s0 "UserPage.png")
+
 - user able to select room and register 
-- pic
+![enter image description here](https://lh3.googleusercontent.com/qXE5X8aAVSs1tocmJVE3B-1o47DhHmiLmgLoRFO9blbd0QSZCeApGTd4uxAfRNn3PA=s0 "RoomOrdering.png")
+
 - user able to make a payment
-- pic
+![enter image description here](https://lh3.googleusercontent.com/TfX-FFDAzZ7hZbHZhMYFX4DXdxJNzkrBm-Z13WZe3syVbRAoNFZmDhcemvbwTk97IQ=s0 "Payment.png")
+
 - user able to edit own profile pic
-- pic
+![enter image description here](https://lh3.googleusercontent.com/lEqkH3azcXSRKT89NmVs8GwiU0F0FaDXn5WaUGJ1chQPboRPyHAUGPTz3ADIHXgR-g=s0 "EditPage.png")
 
 - user able to history payment
-- pic
+![enter image description here](https://lh3.googleusercontent.com/OAQWfqSiNsWuGEEXQzDtUf1XNoK7dwxyBd5JQ9y-UJIMpTz11uy7267-N_GJGf8wYA=s0 "OrderStatus.png")
 
 -user able to click contact us buttom
--pic
+![enter image description here](https://lh3.googleusercontent.com/Iou04nXQ62bogJdqJr6Qme_MYI5ZOYXNH9f8MArVg6_D4cx5VskqFo2VCxoWdlvzwg=s0 "Contactus.png")
 
-step3
+Step3 admin page
 - to access admin page, type locahost:/hotel-WEB/admin/php
-pic
+![enter image description here](https://lh3.googleusercontent.com/vBHuKhxqnyxHtVlQDGj8X7AKYJWjxWzTgOSO66yqmgUxYMYMzyZEiGkuA7fvVljEoQ=s0 "homepage.png")
 
 if new admin want to access the admin page,it require admin only can fully can create for new account
--pic
+![enter image description here](https://lh3.googleusercontent.com/9L3FacMVvFycequWqWUjZyssaesCht1wYP_5EYnTKh-j7Ze-IF1ZjoZsDv3utxxfOg=s0 "add admin.png")
 
 -admin can add,edit and delete the hotel and room 
--pic
+![enter image description here](https://lh3.googleusercontent.com/rRoRNT0KMhNZsDnRfHMtP4DNS0x4dLmI4HG0uv9IdXZ-cc2eHR1ZcCU_pbqdk6IKaw=s0 "edit room.png")
+![enter image description here]![(https://lh3.googleusercontent.com/Yaj7Z67KN_KfwvawLCfw1yHr6Y2R0PIwD-ONOWP2SOwV4xQowefDpEJJYevbGKi_3g=s0 "edit hotel.png")](https://lh3.googleusercontent.com/O04qY2KqeDyK-DPUPQ01ulEzLq4E1zzTTsAR9bvZ2-BElx-ar1Nz91TlgqkYG3AdFg=s0 "add room.png")
 
 -admin can view the history user payment.
--pic
+![enter image description here](https://lh3.googleusercontent.com/3Ik9Tmz8QRW29n8ePA2aUhUwxqpu07mJw7ZsQzDsGetN91zPb1wV--UQRjPyOaC-MA=s0 "view user order list.png")
+
+##THIS IS THE STEP OF THE SCREENSHOTS user and admin 
