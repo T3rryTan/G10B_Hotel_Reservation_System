@@ -48,6 +48,7 @@ if(isset($_GET['action']) || isset($_POST['action']))
 
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="mainhotel.css">
     <link href="css.css" rel="stylesheet" type="text/css"/>
 	<script type="text/javascript">
 	//delete alert
@@ -82,7 +83,7 @@ if(isset($_GET['action']) || isset($_POST['action']))
 	<tr>
 	<th>ROOM ID</th>
 	<th>ROOM IMAGE</th>
-	<th>ROOM NAME</th>
+	<th>ROOM</th>
 	<th>ROOM PRICE</th>
 	<th></th>
 	</tr>
@@ -93,7 +94,7 @@ if(isset($_GET['action']) || isset($_POST['action']))
         		echo '<tr>';
 				echo '<td>'.$row["roomID"].'</td>';
 				echo '<td><img src="image/'.$row["roomImage"].'" alt="'.$row["roomName"].'" width="200" height="150"/></td>';
-        		echo '<td><input type="text" name="roomName" value="'.$row["roomName"].'" size="48"></td>';
+        		echo '<td>NAME&nbsp&nbsp:<input type="text" name="roomName" value="'.$row["roomName"].'" size="48"><br><br>DETAIL:<input type="text" name="roomDetail" value="'.$row["roomDetail"].'" size="48"></td>';
         		echo '<td>Price : RM <input type="text" name="roomPrice" value="'.$row["roomPrice"].'" size="5" ><button type="submit">Save</button></td>';					
 		?>
 				
