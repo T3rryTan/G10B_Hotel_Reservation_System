@@ -2,21 +2,25 @@ body{
     background-image:url("image/sunset register.jpg");
 	 background-size: cover;
 	 background-repeat: no-repeat;
+	
 	}
 
 .divregister 
 {
 	background-color: grey;
 	height: auto;
-        width: auto;
+    width: auto;
 	border-style:outset;
 	background-color:rgba(192,192,192,0.4);
+	
+
 	
 }
 
 p
 {
 	font-style: oblique;
+
 }
 
 tr
@@ -25,7 +29,6 @@ tr
 	font-size: 140%;
 	font-style: italic;
 }
-
 
 	
 	
