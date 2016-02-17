@@ -24,6 +24,7 @@ $categoryResult = mysql_query($categoryTypeQuery) or die(mysql_error());
         ?>
 		<li><a <?php echo ($current_path == 'hotel.php' ? 'class="active"' : '') ?> href='hotel.php'><span>HOTEL</span></a></li>
 		<li <?php echo ($current_path == 'room' ? 'class="active"' : '') ?> class='has-sub'><a href='#'><span>ROOM</span></a>
+           //white dropbox//
             <ul>
                 <?php
                 while($row = mysql_fetch_assoc($categoryResult))
